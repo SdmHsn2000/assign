@@ -1,0 +1,20 @@
+<h1 class="text-center">Person Information Application In Angular</h1>
+<table class="table table-striped-columns table-bordered custom-width">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">DOB</th>
+      <th scope="col">Comments count</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let p of ELEMENT_DATA" [routerLink]="['/table/personDetails/',p.id]">
+    <tr>
+      <td>{{p.id}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.dob}}</td>
+      <td>{{p.comments}}</td>
+    </tr>
+  </tbody>
+</table>
+<router-outlet></router-outlet>

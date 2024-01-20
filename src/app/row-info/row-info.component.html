@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title">Person Details</h1>
+    
+            <!-- Name and DOB on the same line -->
+            <div class="row mb-3">
+              <div class="col">
+                <label for="name"><h3 class="bold-label">Name:</h3></label>
+                <p class="form-control-static">{{ p.name }}</p>
+              </div>
+              <div class="col">
+                <label for="dob" class="form-label font-weight-bold"><h3 class="bold-label">DOB:</h3></label>
+                <p class="form-control-static">{{ p.dob }}</p>
+              </div>
+            </div>
+    
+            <!-- Phone NB and Comments on the same line -->
+            <div class="row mb-3">
+              <div class="col">
+                <label for="phoneNumber" class="form-label font-weight-bold"><h3 class="bold-label">Phone NB:</h3></label>
+                <p class="form-control-static">{{ p.phone }}</p>
+              </div>
+              <div class="col">
+                <label for="comments" class="form-label font-weight-bold"><h3 class="bold-label">Comments:</h3></label>
+                <div *ngFor="let comment of p.comments">
+                  <p class="form-control-static" style="margin-left: 10px;">-{{ comment.text }} ({{ comment.commentDate | date: 'medium' }})</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,33 @@
+/* login.component.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-card {
+    max-width: 600px; /* Increase the maximum width of the card */
+    width: 80%; /* Set the card width to 80% of its container */
+    border: 1px solid #ccc;
+    margin: 20px; /* Adjust margin for spacing */
+  }
+  
+  .login-form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column; /* Set the form layout to a column */
+  }
+  
+  .mat-form-field {
+    width: 100%;
+    margin-bottom: 15px; /* Add margin between input fields */
+  }
+  
+  .button-container {
+    margin-top: 15px; /* Add margin above the button */
+  }
+  
+  .button {
+    width: 100%; /* Make the button 100% width of its container */
+  }
